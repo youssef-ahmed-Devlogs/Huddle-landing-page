@@ -1,0 +1,132 @@
+/*---- Reset Page ----*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Violet);
+}
+
+:root {
+  /*---- Colors ----*/
+
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+
+  /*---- Fonts ----*/
+  --poppins: 'Poppins', sans-serif;
+  --open-sans: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 72%;
+  margin: 0 auto;
+}
+
+.bg-svg {
+  position: absolute;
+  top: 0;
+  left: 116px;
+  height: 100vh;
+  z-index: -1;
+}
+
+.bg-svg img {
+  height: 100vh;
+}
+
+.huddle .logo {
+  width: 250px;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.huddle .logo img {
+  width: 100%;
+}
+
+.huddle-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.huddle-content .huddle-title {
+  color: #fff;
+}
+
+.huddle-content .huddle-title .huddle-head {
+  font-size: 45px;
+  line-height: 1.5;
+  font-family: var(--poppins);
+  text-transform: capitalize;
+}
+
+.huddle-content .huddle-title .huddle-desc {
+  font-family: var(--open-sans);
+  margin: 30px 0 25px;
+  font-size: 18px;
+}
+
+.huddle-content .huddle-title .huddle-btn {
+  font-family: var(--poppins);
+  width: 200px;
+  height: 55px;
+  font-size: 20px;
+  border-radius: 150px;
+  padding: 10px;
+  color: var(--Violet);
+  cursor: pointer;
+  box-shadow: 1px 5px 8px 2px rgb(0 0 0 / 38%);
+  outline: none;
+  border: none;
+  transition: .3s ease-in-out;
+}
+
+.huddle-content .huddle-title .huddle-btn:hover {
+  background-color: var(--Soft-Magenta);
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 50px;
+  right: 70px;
+  width: 100%;
+}
+
+.social-icons ul {
+  list-style: none;
+}
+
+.social-icons ul li {
+  display: inline-block;
+}
+
+.social-icons ul li:nth-child(2) {
+  margin: 0 10px;
+}
+
+.social-icons ul li a i {
+  color: #fff;
+  font-size: 20px;
+  border: 1.8px solid #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.social-icons ul li a i:hover {
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
+}
